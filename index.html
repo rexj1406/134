@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FrameFind is a simple image discovery interface." />
+  <title>FrameFind — Find your next visual idea</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="FrameFind home">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span>FrameFind<span class="brand-dot">.</span></span>
+    </a>
+    <span class="header-note">A little inspiration, one search away</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">YOUR VISUAL DISCOVERY SPACE</p>
+      <h1 id="page-title">Find a little <span>inspiration.</span></h1>
+      <p class="intro">Search a subject and get ready to explore images that spark your next idea.</p>
+
+      <div class="search-panel">
+        <label for="search-input">What would you like to discover?</label>
+        <div class="search-row">
+          <input
+            id="search-input"
+            name="search"
+            type="search"
+            placeholder="Try “mountains”, “architecture”..."
+            autocomplete="off"
+            aria-describedby="search-hint"
+          />
+          <button id="search-button" type="button">Search <span aria-hidden="true">↗</span></button>
+        </div>
+        <p id="search-hint" class="hint">Part 1 preview — image search will be added next.</p>
+        <div class="suggestions" aria-label="Suggested search topics">
+          <span class="suggestions-label">TRY</span>
+          <button class="chip" type="button">Nature</button>
+          <button class="chip" type="button">Architecture</button>
+          <button class="chip" type="button">Animals</button>
+          <button class="chip" type="button">Space</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section" aria-labelledby="results-heading">
+      <div class="results-topline">
+        <div>
+          <p class="eyebrow">THE GALLERY</p>
+          <h2 id="results-heading">Your canvas awaits</h2>
+        </div>
+        <p id="result-count" class="result-count">Results will appear here</p>
+      </div>
+
+      <div id="results" class="results-grid" aria-live="polite"></div>
+
+      <div id="empty-state" class="empty-state">
+        <div class="empty-art" aria-hidden="true">
+          <span class="sun"></span>
+          <span class="mountain mountain-back"></span>
+          <span class="mountain mountain-front"></span>
+        </div>
+        <h3>Every great search starts somewhere.</h3>
+        <p>Enter a topic above. Your image collection will show up here in the next part.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>FrameFind © 2026</span>
+      <span>Made for curious minds.</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
