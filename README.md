@@ -1,6 +1,34 @@
-# FrameFind
+# PixelPulse — Fetch & Render
 
-FrameFind is a simple image-discovery interface where users will be able to search for a topic and browse a gallery of related images.
-I chose a calm green-and-cream palette to make the page feel welcoming and keep attention on the search task.
-The sticky header keeps the app name visible while scrolling, and the suggestion chips give users ideas for what to search.
-The results area is an empty responsive CSS Grid for now; image fetching and rendering will be implemented in Part 2.
+A beginner-friendly image search project built with plain HTML, CSS, and JavaScript. It uses the Wikimedia Commons API and requires no API key.
+
+## Files
+
+- `index.html` — page structure and search form
+- `style.css` — responsive dark theme and image-card grid
+- `script.js` — form handling, API fetching, JSON parsing, and rendering
+
+## Run the project
+
+1. Extract the ZIP file.
+2. Open the extracted folder in VS Code.
+3. Open `index.html` in a browser. If you have VS Code Live Server installed, you can use **Open with Live Server**.
+4. Search for a topic such as `cats`, `ocean`, or `new york`.
+
+An internet connection is required to retrieve real images.
+
+## Assignment concepts demonstrated
+
+- `addEventListener("submit", ...)`
+- `event.preventDefault()`
+- `input.value.trim()`
+- `encodeURIComponent(query)`
+- `fetch()`, `await`, `response.ok`, and `response.json()`
+- `document.createElement()` and `appendChild()`
+- Clearing old results before rendering
+- Ignoring blank searches
+- Enhancement: result count and friendly empty/error messages
+
+## GitHub submission reminder
+
+Use your existing public repository from Part 1. Create a feature branch, commit and push your changes, open a pull request into `main`, and submit your own pull request URL in Kalvium.
